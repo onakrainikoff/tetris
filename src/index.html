@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tetris</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main>
+    <div class="game-scene">
+      <div class="field">
+      </div>
+      <div class="next-tetro-title">next</div>
+      <div class="next-tetro-field"></div>
+      <div class="level-title">level</div>
+      <div class="level-value">1</div>
+      <div class="score-title">score</div>
+      <div class="score-value">0</div>
+      <div class="best-score-title">best</div>
+      <div class="best-score-value">0</div>
+      <button class="button pause-button" type="button">
+        <i class="fa-solid fa-pause"></i>
+      </button>
+    </div>
+    <div class="modal-aria">
+      <div class="modal-content modal-pause">
+        <div class="title">paused</div>
+        <button class="button continue-button" type="button">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button class="button restart-button" type="button">
+          <i class="fa-solid fa-rotate-right"></i>
+        </button>
+      </div>
+      <div class="modal-content modal-game-over">
+        <div class="title">game over</div>
+        <button class="button restart-button" type="button">
+          <i class="fa-solid fa-rotate-right"></i>
+        </button>
+      </div>
+    </div>
+  </main>
+  <script src="js/index.bundle.js"></script>
+
+</body>
+
+</html>

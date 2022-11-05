@@ -1,0 +1,61 @@
+.tetro-removed {
+  animation: fade 0.4s ease forwards;
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.tetro-i {
+  background: linear-gradient(169deg, #EF5350, #D32F2F);
+}
+
+.tetro-i2 {
+  background: linear-gradient(169deg, #EF5350, #D32F2F);
+}
+
+.tetro-i3 {
+  background: linear-gradient(169deg, #FFEA00, #FBC02D);
+}
+
+.tetro-l {
+  background: linear-gradient(169deg, #FF5722, #D84315);
+}
+
+.tetro-l2 {
+  background: linear-gradient(169deg, #FF5722, #D84315);
+}
+
+.tetro-l3 {
+  background: linear-gradient(169deg, #EC407A, #AD1457);
+}
+
+.tetro-l4 {
+  background: linear-gradient(169deg, #EC407A, #AD1457);
+}
+
+.tetro-z {
+  background: linear-gradient(169deg, #00E676, #388E3C);
+}
+
+.tetro-z2 {
+  background: linear-gradient(169deg, #00E676, #388E3C);
+}
+
+.tetro-t {
+  background: linear-gradient(169deg, #03A9F4, #0277BD);
+}
+
+.tetro-o {
+  background: linear-gradient(169deg, #D500F9, #7B1FA2);
+}
+
+.tetro-o2 {
+  background: linear-gradient(169deg, #FFEA00, #FBC02D);
+}

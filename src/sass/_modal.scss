@@ -1,0 +1,49 @@
+.modal-aria {
+    position: absolute;
+    background-color: $modal-bg-color;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr (450px * .5) 1fr;
+    grid-template-rows: 1fr (633px * .25) 1fr;
+
+    @media screen and (max-width: 450px) {
+        font-size: 15px;
+        grid-template-columns: 1fr (337px * .5) 1fr;
+        grid-template-rows: 1fr (452px * .25) 1fr;
+    }
+
+    .modal-content {
+        background-color: $scene-bg-color1;
+        box-shadow: 0 0 5px 1px $scene-bg-color1;
+        border: 2px solid $scene-color1;
+        border-radius: 15px;
+        grid-column: 2;
+        grid-row: 2;
+        text-align: center;
+
+        .title {
+            color: $scene-color2;
+            text-transform: uppercase;
+            margin-top: 20px;
+
+            @media screen and (max-width: 450px) {
+                margin-top: 15px;
+            }
+        }
+
+        .button {
+            margin: 20px 7px 0;
+            width: 70px;
+            height: 70px;
+
+            @media screen and (max-width: 450px) {
+                margin: 15px 5px 0;
+                width: 45px;
+                height: 45px;
+            }
+        }
+    }
+}

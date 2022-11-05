@@ -1,0 +1,70 @@
+$main-bg-color1: #AAB6D8;
+$main-bg-color2: #323232;
+$scene-color1: rgba(255, 152, 0, .85); //#7CD5FF;
+$scene-color2: rgba(128, 212, 16, 0.85);
+$scene-bg-color1: #292B28;
+$scene-bg-color2: #262626;
+$modal-bg-color: rgba(41, 43, 40, .8);
+
+@import "scene";
+@import "tetros";
+@import "modal";
+
+* {
+   box-sizing: border-box;
+   font-family: 'Cantarell', sans-serif;
+   font-size: 20px;
+
+   @media screen and (max-width: 450px) {
+      font-size: 15px;
+   }
+}
+
+:root {
+   --app-height: 100%;
+}
+
+body {
+   background: linear-gradient(169deg, $main-bg-color1, $main-bg-color2);
+}
+
+main {
+   height: 100vh;
+   height: var(--app-height);
+   display: grid;
+   grid-template-columns: 1fr 450px 1fr;
+   grid-template-rows: 1fr 633px 1fr;
+   position: relative;
+
+   @media screen and (max-width: 450px) {
+      grid-template-columns: 1fr 337px 1fr;
+      grid-template-rows: 1fr 447px 1fr;
+   }
+}
+
+.button {
+   border: 1px solid $scene-color1;
+   border-radius: 10px;
+   background-color: $scene-bg-color1;
+   color: $scene-color1;
+   font-size: 30px;
+
+   i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   @media screen and (max-width: 450px) {
+      font-size: 20px;
+   }
+
+   &:hover {
+      background-color: $scene-bg-color2;
+   }
+
+   &:active {
+      color: $scene-color2;
+      border: 1px solid $scene-color2;
+   }
+}
