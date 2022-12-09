@@ -1,0 +1,6 @@
+/*!
+ * 
+ * ZingTouch v1.0.6
+ * Author: ZingChart http://zingchart.com
+ * License: MIT
+ */
