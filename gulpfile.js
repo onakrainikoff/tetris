@@ -92,7 +92,7 @@ task("ts", ()=> {
 task("html", ()=> {
     return src(paths.html.src)
     .pipe(gulpif(isProd, replace("style.css", "style.min.css")))
-    .pipe(gulpif(isProd, replace(".js", ".min.js")))
+    .pipe(gulpif(isProd, replace("index.bundle.js", "index.bundle.min.js")))
     .pipe(dest(paths.html.dest))
     .pipe(debug({
         "title": "Html files"
