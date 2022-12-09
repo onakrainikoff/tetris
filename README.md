@@ -1,4 +1,5 @@
 # Tetris Game - Study project.
+![tetris_img](doc/tetris.png)
 
 ## Run for Development
 ```
